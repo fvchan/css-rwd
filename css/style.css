@@ -167,24 +167,6 @@ img[alt*="Social"] {
 }
 
 
-@media only screen and (max-width: 400px) {
-body {
-	background-color: yellow;
-	}
-	.page {
-		width: 960px;
-		margin:0 auto;
-	}
-	
-	.projects,
-	.gallery	
-	 {
-		width: 50%;
-		float: left;
-
-	}
-} 
-
 /* MOBILE*/
 
 @media only screen and (max-width: 400px) {
