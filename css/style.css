@@ -1,0 +1,281 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box; /*to avoid overflows*/
+}
+
+nav {
+	background-color: lightyellow;
+	height: 100%;
+	width: 200px;
+	position: fixed;
+
+}
+
+main {
+	background-color: lightgrey;
+	margin-left: 200px;
+}
+
+.banner {
+	background-color: #239aaf;
+	height: 700px;
+	position: relative;
+	
+}
+
+.about {
+	background-color: #e7ed93;
+	/*height: 700px;*/
+	min-height: 300px;
+}
+
+.services {
+	background-color: #f29393;
+	/*height: 300px;*/
+	min-height: 300px;
+}
+
+.projects {
+	background-color: #efac92;
+	
+	min-height: 300px;
+}
+
+.gallery {
+	background-color: orange;
+	min-height: 300px;
+}
+
+footer {
+	background-color: #892d23;
+	min-height: 50px;
+}
+
+nav,
+.banner,
+.about,
+.services,
+.projects,
+.gallery,
+footer {
+	padding: 30px;
+
+}
+
+.logo {
+	height: 140px;
+	width: 140px;
+	background-color: grey;
+	margin: 0 auto;
+	
+}
+
+ul >li {
+	list-style-type: none;
+	background-color: lightblue;
+	margin-bottom: 5px;
+	line-height: 48px;
+	text-align: center;
+
+}
+
+ul > li >a{
+text-decoration: none;
+}
+
+
+
+
+/*ul >li >a:hover {
+	font-size: 100px;
+}*/
+
+.box {
+	border: 5px solid white;
+	text-align: center;
+	width: 40%;
+	padding: 40px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.column {
+	border: 1px solid white;
+	width: 31%;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding: 10px;
+}
+
+.column h3 {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+img[alt*="service"] {
+	border: 1px solid #fff;
+	height: 60px;
+	width: 60px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+
+}
+
+img[alt*="service"] ~ P {
+	overflow: hidden;
+}
+
+img[alt*="service"] ~ h3 {
+	margin-bottom: 10px;
+}
+
+
+.gallery > .column {
+	width: 23%;
+	margin: 0 1%;
+}
+
+img[alt*="gallery"]{
+	display: block;
+	width: 100%;
+	border: 1px solid black;
+	height: 100px;
+}
+
+img[alt*="Social"] {
+	width: 20px;
+	height: 20px;
+	border: 1px solid black;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+.contact {
+	float: right;
+}
+
+
+@media only screen and (max-width: 400px) {
+body {
+	background-color: yellow;
+	}
+	.page {
+		width: 960px;
+		margin:0 auto;
+	}
+	
+	.projects,
+	.gallery	
+	 {
+		width: 50%;
+		float: left;
+
+	}
+} 
+
+/* MOBILE*/
+
+@media only screen and (max-width: 400px) {
+body {
+	background-color: red;
+}
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	nav {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	main {
+		margin: 0px;
+	}
+
+	
+	.banner,
+	.about,
+	.services,
+	.projects,
+	.gallery,
+	.column,
+	footer{	
+		width: 100%;
+		float: left;
+		
+		
+	}
+
+	.gallery .column {
+		width: 100%;
+		margin-bottom: 25px;
+	}
+	
+}
+
+/* tablet */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+body {
+	background-color: yellow;
+	}
+	
+
+	.column  {
+		width: 100%;
+		float: left;
+
+
+	}
+
+	.services .column {
+		width: 50%;
+		float: left;
+	}
+
+	footer {
+		content: "";
+		display: block;
+		clear: both 
+	}
+
+	.gallery > .column {
+		width: 40%;
+		margin: 10px;
+		
+	}
+	
+} 
+
+/* Laptop/Desktop */
+@media only screen and (min-width: 961px){
+body {
+	background-color: blue;
+}
+
+	.column1 {
+		width: 100%;
+		float: left;
+		margin-left: 10px;
+	}
+	
+	.column {
+		width: 30%;
+	}
+
+}
